@@ -1,0 +1,71 @@
+BinarySearch
+Aim:
+To write a C program to search an element using the Binary Search technique.
+
+Algorithm:
+Start.
+Read the number of elements n.
+Read n elements in ascending order into an array.
+Read the element key to be searched.
+Initialize start = 0, end = n - 1.
+Repeat while start <= end:
+Find mid = (start + end) / 2.
+If arr[mid] == key, print “Element found” and stop.
+If arr[mid] < key, set start = mid + 1.
+Else set end = mid - 1.
+If not found, display “Element not found”.
+Stop.
+
+Program:
+#include<stdio.h>
+int main()
+{
+    int n, key, start, end, mid;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter %d values for array:\n", n);
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    printf("Enter element to be searched: ");
+    scanf("%d", &key);
+
+    start = 0;
+    end = n - 1;
+
+    while (start <= end)
+    {
+        mid = (start + end) / 2;
+
+        if (arr[mid] == key)
+        {
+            printf("Element %d found at the index: %d", key, mid);
+            return 0;
+        }
+        else if (arr[mid] < key)
+        {
+            start = mid + 1;
+        }
+        else
+        {
+            end = mid - 1;
+        }
+    }
+    printf("Element not found: %d", key);
+    return 0;
+}
+
+Output:
+Enter the value of n:5
+enter 5 value for array:
+1
+2
+3
+4
+6
+Enter element to be searched:8
+element not found in 8
+
+ Result: Program executed successfully and displayed correct search results.
