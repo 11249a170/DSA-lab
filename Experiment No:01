@@ -16,4 +16,52 @@ step6:If the loop completed&the element is not found
 step7:Stop
 
 program:
-Experiment No:01
+#include <stdio.h>
+#include <stdbool.h>
+
+int main()
+{
+    int i, n, key;
+    printf("Enter the size of array: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter the array elements:\n");
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    printf("Enter the element to be searched: ");
+    scanf("%d", &key);
+
+    bool flag;
+    flag = false;
+
+    for (i = 0; i < n; i++)
+    {
+        if (arr[i] == key)
+        {
+            printf("The element is found at index %d : %d\n", i, arr[i]);
+            flag = true;
+            break;
+        }
+    }
+    if (!flag)
+    {
+        printf("The element is not found");
+    }
+    return 0;
+}
+
+
+Output:
+Enter the size of array:5
+Enter the array elements:
+1
+2
+3
+4
+6
+Enter the element to be searched:8
+the element is not found
+
+Result: Program executed successfully and searched the given element correctly.
