@@ -1,1 +1,19 @@
 1.LinearSearch
+Aim:To write a program that implements Linear Search to find the position of a given element in a list or array.
+
+Algorithm:
+step1:start
+step2:Input the array A of size n
+step3:Input the elements to search, say key
+step4:Set i=0 A loop initializer
+step5:Repeat while i<n,do the following
+      if A[i] is equal to key,then
+      print"Element found at position i"
+      stop
+      otherwise,increase i by 1
+step6:If the loop completed&the element is not found 
+      print"Element not found"
+step7:Stop
+
+program:
+Experiment No:01
