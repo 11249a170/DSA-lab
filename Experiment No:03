@@ -1,0 +1,25 @@
+Stack
+
+Aim:
+To implement a stack using an array and perform push, pop and display operations.
+
+Algorithm:
+Start.
+Initialize top = -1 and MAX (stack size).
+Display menu: 1) Push 2) Pop 3) Display 4) Exit.
+If user chooses Push:
+Check if top == MAX-1 → if true, report "stack overflow" and go to step 3.
+Else increment top = top + 1 and set stack[top] = value (read value).
+Go to step 3.
+If user chooses Pop:
+Check if top == -1 → if true, report "stack underflow" and go to step 3.
+Else read popped = stack[top], decrement top = top - 1, display popped value.
+Go to step 3.
+If user chooses Display:
+If top == -1 display "stack is empty".
+Else loop i = top down to 0 and print stack[i].
+Go to step 3.
+If user chooses Exit: stop.
+End.
+
+Program:
