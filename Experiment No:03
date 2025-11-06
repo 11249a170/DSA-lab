@@ -23,3 +23,79 @@ If user chooses Exit: stop.
 End.
 
 Program:
+#include <stdio.h>
+int main()
+{
+    int n, op, top, item;
+    top = -1;
+    printf("enter the size of the stack:\n");
+    scanf("%d", &n);
+    int arr[n];
+    while (op != 3)
+    {
+        printf("choose the operation: 1.push, 2.pop, 3.exit\n");
+        scanf("%d", &op);
+        switch (op)
+        {
+        case 1:
+            if (top == n - 1)
+            {
+                printf("stack overflow");
+            }
+            else
+            {
+                printf("enter the element to be insert:\n");
+                scanf("%d", &item);
+                top = top + 1;
+                arr[top] = item;
+            }
+            break;
+
+        case 2:
+            if (top == -1)
+            {
+                printf("stack underflow");
+            }
+            else
+            {
+                item = arr[top];
+                top = top - 1;
+                printf("the item is:%d\n", item);
+            }
+            break;
+
+        case 3:
+            return 0;
+
+        default:
+            printf("no such operation is included\n");
+        }
+    }
+    return 0;
+}
+
+ Output:
+enter the size of the stack:
+3
+choose the operation: 1.push, 2.pop, 3.exit
+1
+enter the element to be insert:
+10
+choose the operation: 1.push, 2.pop, 3.exit
+1
+enter the element to be insert:
+20
+choose the operation: 1.push, 2.pop, 3.exit
+2
+the item is:20
+choose the operation: 1.push, 2.pop, 3.exit
+3
+
+ Result:
+Program executed successfully and performed stack operations (push and pop) correctly.
+
+
+
+
+
+
