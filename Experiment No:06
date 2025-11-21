@@ -1,3 +1,22 @@
+LinkedList
+Aim:
+To write a C program to implement Linked List operations such as creation, insertion, deletion, and display of elements.
+
+Algorithm:
+Start the program.
+Define a structure node containing data and a pointer next.
+Initialize head = NULL.
+Create a new node using dynamic memory allocation.
+For insertion:
+If list is empty, make the new node as head.
+Otherwise, traverse to the end and link the new node.
+For deletion:
+Find the node to delete and adjust the links accordingly.
+For display:
+Traverse from head to end and print each node’s data.
+Stop the program.
+
+Program:
 #include <stdio.h>
 #include <stdlib.h>
 struct Node
