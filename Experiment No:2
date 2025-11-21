@@ -10,7 +10,7 @@ Read the element key to be searched.
 Initialize start = 0, end = n - 1.
 Repeat while start <= end:
 Find mid = (start + end) / 2.
-If arr[mid] == key, print “Element found” and stop.
+If arr[mid] == key, print “Element found” and stop
 If arr[mid] < key, set start = mid + 1.
 Else set end = mid - 1.
 If not found, display “Element not found”.
