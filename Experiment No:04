@@ -1,4 +1,4 @@
-StringReverse
+StringReversal
 Aim:
 To write a C program to reverse a string using stack operations (push and pop).
 
