@@ -1,3 +1,16 @@
+Best fit
+Aim:
+The aim of the Best Fit algorithm in the Bin Packing Problem is to place each item into the bin that leaves the least leftover space.
+This helps minimize the number of bins used while efficiently utilizing available space.
+
+Algorithm:
+1. For each item, iterate through all existing bins. 
+2. Place the item in the bin that has enough capacity and results in the minimum remaining empty 
+space (the "tightest" fit). 
+3. If no bin can accommodate the item, open a new bin.
+
+Program:
+
 #include <stdio.h>
 
 void bestFit(int items[], int n, int capacity)
