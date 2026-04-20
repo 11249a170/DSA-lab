@@ -1,3 +1,16 @@
+TSP
+Aim:
+The aim of the Travelling Salesman Problem is to find the shortest possible route that visits each city exactly once.
+
+Algorithm:
+1. For every city i and subset of cities S, define Cost(i, S) as the minimum distance starting at city 1, 
+visiting all cities in S, and ending at city i. 
+2. Use the recurrence: Cost(i, S) = min{ Cost(j, S - {i}) + dist(j, i)} for all j in S.  
+3. Solve subproblems of increasing size until all cities are included. 
+4. Add the distance back to the starting city to complete the cycle.
+
+Program:
+
 #include <stdio.h>
 #include <limits.h>
 #define MAXN 15
