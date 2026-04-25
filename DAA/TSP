@@ -96,3 +96,16 @@ int main()
 
     return 0;
 }
+
+Output:
+Enter number of cities: 3
+Enter cost matrix:
+3 2 1
+4 5 7
+8 9 6
+Given Cost Matrix
+| 3  2  1 |
+| 4  5  7 |
+| 8  9  6 |
+Minimum travelling cost: 14
+
