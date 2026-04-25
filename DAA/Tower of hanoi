@@ -1,7 +1,6 @@
 Tower of Hanoi
 Aim:
-The aim of the Tower of Hanoi is to move all disks from the source rod to the destination rod.
-This must be done by moving one disk at a time without placing a larger disk on a smaller one.
+To understand and implement the Tower of Hanoi problem using recursion and analyze its time complexity.
 
 Algorithm:
 1. When the problem is reduced to a single disk, move that disk directly from Source to 
@@ -38,3 +37,24 @@ int main()
 
     hanoi(n, 'S', 'A', 'D');
 }
+
+Output:
+enter the no of disks : 4
+
+ move 1 from S to A
+ move 2 from S to D
+ move 1 from A to D
+ move 3 from S to A
+ move 1 from D to S
+ move 2 from D to A
+ move 1 from S to A
+ move 4 from S to D
+ move 1 from A to D
+ move 2 from A to S
+ move 1 from D to S
+ move 3 from A to D
+ move 1 from S to A
+ move 2 from S to D
+ move 1 from A to D
+
+Result: Successfully implemented Tower of Hanoi using recursion and verified correct movement of disks.
