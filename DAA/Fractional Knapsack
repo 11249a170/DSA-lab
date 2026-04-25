@@ -1,0 +1,86 @@
+Fractional Knapsack
+Aim:
+To maximize the total value in the knapsack by selecting items (or fractions of items) based on the highest value-to-weight ratio.
+
+Algorithm:
+1. Calculate the value-to-weight ratio for every item.
+2. Sort items in descending order based on this ratio. 
+3. Iterate through sorted items:
+o If the item's weight fits, take the whole item.  
+o If not, take the fraction of the item that fills the remaining capacity.  
+4. Return the accumulated total value. 
+
+Program:
+#include <stdio.h>   
+struct Item
+ {
+    int weight;      
+    int value; 
+    float ppw;
+}:
+void sort(struct Item items[], int n) 
+{ 
+   struct Item temp; 
+   for (int i = 0; i < n - 1; i++) 
+{ 
+for (int j = 0; j < n - i - 1;j++)
+{
+if (items[j].ppw < items[j + 1].ppw)
+{
+ temp = items[j]; 
+ items[j] = items[j + 1];
+ items[j + 1] = temp;
+}
+}
+}
+}
+. int main() 
+{
+int n;
+float capacity;
+ printf("Enter number of items: ");
+ scanf("%d", &n); 
+ if (n <= 0) 37.         
+return 1; 
+struct Item items[n];
+ printf("Enter weight and value of each item:\n"); 
+ for (int i = 0; i < n; i++)
+{ 
+printf("Item %d: ", i + 1);
+scanf("%d %d", &items[i].weight, &items[i].value);
+items[i].ppw = (float)items[i].value / items[i].weight; 
+} 
+ printf("Enter knapsack capacity: ");
+ scanf("%f", &capacity); 
+ float totalProfit = 0.0;
+ for (int i = 0; i < n; i++) 
+{ 
+ if (capacity >= items[i].weight) 
+{
+ totalProfit += items[i].value;
+capacity -= items[i].weight;
+ } 
+else
+{ 
+totalProfit += items[i].ppw * capacity;
+ break; 
+} 
+} 
+ printf("Maximum profit = %.2f\n", totalProfit);
+  return 0;
+} 
+
+Output:
+Enter number of items: 5
+Enter weight and value of each item:
+Item 1: 10  2
+Item 2: 12 4
+Item 3: 4  2 
+Item 4: 10  5
+Item 5: 9  3
+Enter knapsack capacity: 8
+Maximum profit = 1.60
+
+Result:
+
+The fractional knapsack algorithm provides an optimal solution where items can be broken into smaller parts, achieving the maximum possible profit within the given weight capacity.
