@@ -74,6 +74,18 @@ int main()
     return 0;
 }
 
+Output:
+Enter number of items: 3
+Enter item sizes:
+Item 1: 20 5
+Item 2: Item 3: 25 5
+Enter bin capacity: 
+Executing First Fit Algorithm
+Item 1 with size 20 cannot be placed in any bin
+Item 5 placed in Bin 1
+Item 3 with size 25 cannot be placed in any bin
+Total bins used = 1
+
 Result:
 Successfully allocated memory blocks using First Fit strategy.
 
