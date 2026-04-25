@@ -1,6 +1,6 @@
 TSP
 Aim:
-The aim of the Travelling Salesman Problem is to find the shortest possible route that visits each city exactly once.
+To implement the Travelling Salesman Problem using dynamic programming and optimize path cost.
 
 Algorithm:
 1. For every city i and subset of cities S, define Cost(i, S) as the minimum distance starting at city 1, 
