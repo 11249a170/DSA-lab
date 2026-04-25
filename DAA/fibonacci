@@ -44,4 +44,8 @@ int main()
     printf("fibonacci nth term is %d", result);
 }
 
+Output:
+enter the integer number:7
+fibonacci nth term is 13
+
 Result:Successfully generated Fibonacci series using recursion.
