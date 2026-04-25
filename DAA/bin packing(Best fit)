@@ -1,7 +1,6 @@
 Best fit
 Aim:
-The aim of the Best Fit algorithm in the Bin Packing Problem is to place each item into the bin that leaves the least leftover space.
-This helps minimize the number of bins used while efficiently utilizing available space.
+To implement the Best Fit algorithm for efficient memory allocation and minimize memory wastage
 
 Algorithm:
 1. For each item, iterate through all existing bins. 
@@ -92,3 +91,7 @@ int main()
 
     return 0;
 }
+
+Result:
+Successfully allocated memory blocks using Best Fit strategy with minimum wastage.
+
