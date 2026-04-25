@@ -1,7 +1,6 @@
 Fibonacci
 Aim:
-The aim of the Fibonacci sequence is to generate a series where each number is the sum of the two preceding numbers.
-It is used to model growth patterns and solve problems using recursion and dynamic programming.
+ To implement the Fibonacci sequence using recursion and understand recursive function calls.
 
 Algorithm:
 1. Read the value of n and validate n ≥ 0. 
@@ -44,3 +43,5 @@ int main()
     result = fib(n);
     printf("fibonacci nth term is %d", result);
 }
+
+Result:Successfully generated Fibonacci series using recursion.
